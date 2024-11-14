@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Nivel Two</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="menu-navegacion">
+        <a href="#servicio">Servicios</a>
+        <a href="#portafolio">Portafolio</a>
+        <a href="#expertos">Expertos en</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#sobre-nosotros">Sobre Nosotros</a>
+    </div>
+
+    <header class="header">
+        <div class="contenedor">
+            <h1 class="titulo">Convertimos tus sueños en realidad</h1>
+            <p class="copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quidem consectetur veniam iusto accusamus, earum, saepe eius amet, consequatur quas possimus laboriosam nobis vitae voluptatem dolor porro veritatis culpa provident.</p>
+        </div>
+    </header>
+    
+    <section id="servicio" class="contenedor">
+        <h2 class="subtitulo">Nuestros Servicios</h2>
+        <div class="contenedor-servicio">
+            <img src="img/ufc10.png" alt="Diseño Web" class="imagen-servicio" onclick="openModal(this)">
+        </div>
+        <div class="checklist-servicio">
+            <div class="service">
+                <h3 class="n-service"><span class="number">1</span> Diseño Web</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit perferendis laboriosam...</p>
+            </div>
+            <div class="service">
+                <h3 class="n-service"><span class="number">2</span> Diseño Gráfico</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non consequuntur quisquam...</p>
+            </div>
+            <div class="service">
+                <h3 class="n-service"><span class="number">3</span> Marketing Digital</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quidem optio consequuntur...</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portafolio" class="contenedor gallery">
+        <h2 class="subtitulo">Galería</h2>
+        <div class="carrusel-container">
+            <div class="carrusel">
+                <img src="img/ufc3.png" alt="Imagen de producto 1" class="carrusel-img" onclick="openModal(this)">
+                <img src="img/ufc4.png" alt="Imagen de producto 2" class="carrusel-img" onclick="openModal(this)">
+                <img src="img/ufc7.png" alt="Imagen de producto 3" class="carrusel-img" onclick="openModal(this)">
+                <img src="img/ufc2.png" alt="Imagen de producto 4" class="carrusel-img" onclick="openModal(this)">
+            </div>
+            <button class="prev" onclick="moverCarrusel(-1)">&#10094;</button>
+            <button class="next" onclick="moverCarrusel(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="expertos" class="contenedor">
+        <h2 class="subtitulo">Expertos en</h2>
+        <div class="contenedor-expertos">
+            <div class="experto">
+                <img src="img/d1.png" alt="Experto 1" class="img-experto" onclick="openModal(this)">
+            </div>
+            <div class="experto">
+                <img src="img/d2.png" alt="Experto 2" class="img-experto" onclick="openModal(this)">
+            </div>
+            <div class="experto">
+                <img src="img/d3.png" alt="Experto 3" class="img-experto" onclick="openModal(this)">
+            </div>
+            <div class="experto">
+                <img src="img/d5.png" alt="Experto 4" class="img-experto" onclick="openModal(this)">
+            </div>
+            <div class="experto">
+                <img src="img/d7.png" alt="Experto 5" class="img-experto" onclick="openModal(this)">
+            </div>
+        </div>
+    </section>
+
+   
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Proyecto Nivel Two - Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank" class="social-icon">Facebook</a>
+                <a href="https://twitter.com" target="_blank" class="social-icon">Twitter</a>
+                <a href="https://instagram.com" target="_blank" class="social-icon">Instagram</a>
+                <a href="https://linkedin.com" target="_blank" class="social-icon">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
